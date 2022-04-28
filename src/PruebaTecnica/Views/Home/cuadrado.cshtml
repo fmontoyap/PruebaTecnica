@@ -24,30 +24,13 @@
 
 <script type="text/javascript">
 
-    Math.areaCuadrado = function (lado)
-    {
+    Math.areaCuadrado = function (lado) {
         return lado * lado;
-    }
+    };
 
-    $('#btnAreaCuadrado').click(function () {
-        var lado = $('#ladoCuadrado').val();
-        var area = Math.areaCuadrado(lado);
-        $('#resAreaCuadrado').text(area);
-    });
-
-    $('#btnPerimetroCuadrado').click(function () {
-
-        $.ajax({
-            url: '/Math/PerimetroCuadrado',
-            type: 'POST',
-            data: { lado: $("#ladoCuadrado").val() },
-            success: function (response) {
-                $('#resPerimetroCuadrado').text(response);
-            },
-            error: function (error) {
-                console.log(error)
-            }
-        });
-    });
+    // Usando jQuery:
+    //      Subscribirse a los eventos de los botones
+    //      Resolver el area del cuadrado llamando a la funcion Math.areaCuadrado
+    //      Resolver el perimetro llamando por Ajax a /Math/PermietroCuadrado?lado={valor}
 
 </script>

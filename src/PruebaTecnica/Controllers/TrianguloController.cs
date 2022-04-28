@@ -16,13 +16,5 @@ namespace PruebaTecnica.Controllers
             Triangulo triangulo = new Triangulo();
             return View(triangulo);
         }
-
-        [HttpPost]
-        public ActionResult Area(Triangulo triangulo)
-        {
-            triangulo.Area = triangulo.Base * triangulo.Altura / 2;
-            return View(triangulo);
-        }
-
 	}
 }

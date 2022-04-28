@@ -9,8 +9,6 @@ namespace PruebaTecnica.Models
 {
     public class Triangulo
     {
-        public float Base { get; set; }
-        public float Altura { get; set; }
-        public float Area { get; set; }
+        // TODO...
     }
 }
