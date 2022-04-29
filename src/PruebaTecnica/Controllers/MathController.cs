@@ -11,10 +11,7 @@ namespace PruebaTecnica.Controllers
 
         public ActionResult PerimetroCuadrado(double lado)
         {
-            return Json(4*lado, JsonRequestBehavior.AllowGet);
-
-
-            //throw new NotImplementedException();
+            throw new NotImplementedException();
         }
     }
 }
